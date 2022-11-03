@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #666666;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+#newgame {
+  background-color: #61C9A8;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  cursor: pointer;
+  /* clear: both; */
+}
+
+td {
+  width: 150px;
+  height: 150px;
+  font-size: 120px;
+}
+
+.bottom {
+  border-bottom: 6px solid #1e111f;
+}
+
+.right {
+  border-right: 6px solid #1e111f;
+}
+
+/*below are 2 pairs of tokens*/
+
+.x::after {
+  content: "x";
+  color: #ADA8B6;
+}
+
+.o::after {
+  content: "o";
+  color: #FFEEDB;
+}
+
+#message {
+  font-size: 20px;
+  color: #FFEEDB;
+  /* margin-top: 10px;
+  z-index: 0 !important; */
+}
+
+.scores {
+  width: 300px;
+  margin: auto;
+}
+
+#player1 {
+  float: left;
+  display: inline-block;
+}
+
+#player2 {
+  display: inline-block;
+  float: right;
+}
+
+.scores p {
+  font-size: 20px;
+  color: #FFEEDB;
+}
+
+.scores .num {
+  position: relative;
+  font-size: 30px;
+  top: -20px;
+}
+
+#restart {
+  background-color: #1e111f;
+  border: none;
+  color: #FFEEDB;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative;
+  top: 100px;
+}
+
+#restart:hover {
+  background-color: #FFEEDB;
+  font-weight: bold;
+  color: #1e111f;
+  cursor: pointer;
+}
